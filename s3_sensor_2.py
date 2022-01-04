@@ -31,7 +31,7 @@ with DAG('g_s3_exmp', default_args=default_args, schedule_interval= '@once') as 
         task_id='check_s3_for_file_in_s3',
         bucket_key='tst/file-to-watch-*',
         wildcard_match=True,
-        bucket_name='aiola-219297260093-us-east-1-g-test-data',
+        bucket_name='****-us-east-1-g-test-data',
         # s3_conn_id='my_s3_conn',
         timeout=18*60*60,
         poke_interval=30,
